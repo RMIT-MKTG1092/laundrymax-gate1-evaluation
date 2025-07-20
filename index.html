@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaundryMax Co. Gate 1 Evaluation Worksheet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ba372a;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #ba372a;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"], 
+        input[type="email"], 
+        textarea, 
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        .description {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        .required {
+            color: #ba372a;
+        }
+        .instruction-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-left: 4px solid #ba372a;
+            margin-bottom: 25px;
+        }
+        .submit-btn {
+            background-color: #ba372a;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #9e2f23;
+        }
+        .confirmation-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>LaundryMax Co. Gate 1 Evaluation Worksheet</h1>
+        
+        <div class="instruction-box">
+            <strong>Stage-Gate® Gate 1: Idea Screen Assessment</strong><br>
+            <strong>Instructions:</strong> Use this worksheet to systematically evaluate your chosen LaundryMax Co. innovation opportunity using Stage-Gate® Gate 1 criteria. Remember: Gate 1 is a "gentle screen" focused on strategic fit and preliminary feasibility.<br><br>
+            <strong>Gate 1 Key Question:</strong> "Is this opportunity worth investigating further?"
+        </div>
+
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            
+            <!-- Section 1: Project Information -->
+            <h2>Project Information</h2>
+            
+            <div class="form-group">
+                <label for="opportunity_name">Innovation Opportunity Name <span class="required">*</span></label>
+                <div class="description">Provide a brief, descriptive name for your LaundryMax innovation direction</div>
+                <input type="text" id="opportunity_name" name="opportunity_name" placeholder="e.g., Smart Refill Packaging System or Apartment-Friendly Concentrated Formula" required>
+            </div>
+
+            <div class="form-group">
+                <label for="opportunity_description">Brief Innovation Description <span class="required">*</span></label>
+                <div class="description">Summarise your chosen LaundryMax innovation opportunity in 2-3 sentences</div>
+                <textarea id="opportunity_description" name="opportunity_description" placeholder="Describe the core concept and target consumer need being addressed" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="target_segment">Primary Target Consumer Segment <span class="required">*</span></label>
+                <div class="description">Which LaundryMax consumer group does this opportunity primarily serve?</div>
+                <select id="target_segment" name="target_segment" required>
+                    <option value="">Select a target segment...</option>
+                    <option value="time-poor-households">Time-poor dual-income households</option>
+                    <option value="eco-conscious">Environmentally conscious consumers</option>
+                    <option value="tech-savvy-urban">Tech-savvy urban dwellers</option>
+                    <option value="budget-conscious">Budget-conscious families</option>
+                    <option value="space-constrained">Space-constrained renters</option>
+                    <option value="other">Other (specify in comments)</option>
+                </select>
+            </div>
+
+            <!-- Section 2: Must-Meet Criteria -->
+            <h2>Gate 1 Must-Meet Criteria</h2>
+            <div class="instruction-box">
+                <strong>These criteria must be satisfied for the project to proceed. Evaluate each as Pass or Fail.</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="strategic_alignment">Strategic Alignment with LaundryMax Co. <span class="required">*</span></label>
+                <div class="description">Does this opportunity align with LaundryMax's current capabilities, brand positioning, and market position?</div>
+                <select id="strategic_alignment" name="strategic_alignment" required>
+                    <option value="">Select assessment...</option>
+                    <option value="pass">Pass - Strong alignment with company direction</option>
+                    <option value="fail">Fail - Poor fit with company strategy</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="strategic_alignment_rationale">Strategic Alignment Rationale</label>
+                <div class="description">Explain your Pass/Fail assessment for strategic alignment</div>
+                <textarea id="strategic_alignment_rationale" name="strategic_alignment_rationale" placeholder="Justify why this opportunity fits (or doesn't fit) with LaundryMax's capabilities and market position"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="market_potential">Market Size Potential <span class="required">*</span></label>
+                <div class="description">Is there sufficient addressable market opportunity for LaundryMax to pursue?</div>
+                <select id="market_potential" name="market_potential" required>
+                    <option value="">Select assessment...</option>
+                    <option value="pass">Pass - Sufficient market size and potential</option>
+                    <option value="fail">Fail - Market too small or declining</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="market_potential_rationale">Market Potential Rationale</label>
+                <div class="description">Explain your assessment of market size and opportunity</div>
+                <textarea id="market_potential_rationale" name="market_potential_rationale" placeholder="Describe the target market size and growth potential for this innovation"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="technical_feasibility">Technical Feasibility <span class="required">*</span></label>
+                <div class="description">Can this innovation potentially be developed and implemented by LaundryMax?</div>
+                <select id="technical_feasibility" name="technical_feasibility" required>
+                    <option value="">Select assessment...</option>
+                    <option value="pass">Pass - Technically feasible within reasonable resources</option>
+                    <option value="fail">Fail - Major technical barriers or resource constraints</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="technical_feasibility_rationale">Technical Feasibility Rationale</label>
+                <div class="description">Explain your assessment of development and implementation feasibility</div>
+                <textarea id="technical_feasibility_rationale" name="technical_feasibility_rationale" placeholder="Consider manufacturing, supply chain, regulatory, and capability requirements"></textarea>
+            </div>
+
+            <!-- Section 3: Should-Meet Criteria -->
+            <h2>Gate 1 Should-Meet Criteria</h2>
+            <div class="instruction-box">
+                <strong>Rate each criterion on a scale of 1-5 (1=Poor, 3=Adequate, 5=Excellent)</strong>
+            </div>
+
+            <div class="form-group">
+                <label for="competitive_advantage">Competitive Advantage Potential (1-5) <span class="required">*</span></label>
+                <div class="description">How differentiated could this innovation be in the market?</div>
+                <select id="competitive_advantage" name="competitive_advantage" required>
+                    <option value="">Select rating...</option>
+                    <option value="5">5 - Highly differentiated, difficult to replicate</option>
+                    <option value="4">4 - Strong differentiation potential</option>
+                    <option value="3">3 - Moderate differentiation possible</option>
+                    <option value="2">2 - Limited differentiation</option>
+                    <option value="1">1 - No clear competitive advantage</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="capability_synergy">Synergy with Existing Capabilities (1-5) <span class="required">*</span></label>
+                <div class="description">How well does this leverage LaundryMax's current strengths and resources?</div>
+                <select id="capability_synergy" name="capability_synergy" required>
+                    <option value="">Select rating...</option>
+                    <option value="5">5 - Perfect fit with existing capabilities</option>
+                    <option value="4">4 - Strong synergy with current operations</option>
+                    <option value="3">3 - Moderate capability alignment</option>
+                    <option value="2">2 - Some capability gaps</option>
+                    <option value="1">1 - Major new capabilities required</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="market_attractiveness">Market Attractiveness and Growth (1-5) <span class="required">*</span></label>
+                <div class="description">How attractive is the market opportunity and growth potential?</div>
+                <select id="market_attractiveness" name="market_attractiveness" required>
+                    <option value="">Select rating...</option>
+                    <option value="5">5 - Highly attractive, fast-growing market</option>
+                    <option value="4">4 - Attractive market with good growth</option>
+                    <option value="3">3 - Moderately attractive market</option>
+                    <option value="2">2 - Limited market attractiveness</option>
+                    <option value="1">1 - Unattractive or declining market</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="consumer_value">Consumer Value Proposition (1-5) <span class="required">*</span></label>
+                <div class="description">How compelling is the value proposition for target consumers?</div>
+                <select id="consumer_value" name="consumer_value" required>
+                    <option value="">Select rating...</option>
+                    <option value="5">5 - Exceptional consumer value and appeal</option>
+                    <option value="4">4 - Strong consumer value proposition</option>
+                    <option value="3">3 - Adequate consumer benefit</option>
+                    <option value="2">2 - Limited consumer value</option>
+                    <option value="1">1 - Unclear or weak consumer benefit</option>
+                </select>
+            </div>
+
+            <!-- Section 4: Gate 1 Decision -->
+            <h2>Gate 1 Decision</h2>
+
+            <div class="form-group">
+                <label for="gate_decision">Gate 1 Decision Recommendation <span class="required">*</span></label>
+                <div class="description">Based on your evaluation, what is your recommendation for this LaundryMax opportunity?</div>
+                <select id="gate_decision" name="gate_decision" required>
+                    <option value="">Select decision...</option>
+                    <option value="go">Go - Proceed to Stage 1 (Scoping)</option>
+                    <option value="kill">Kill - Terminate the project</option>
+                    <option value="hold">Hold - Postpone due to timing or resource constraints</option>
+                    <option value="recycle">Recycle - Revise concept and re-evaluate</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="decision_rationale">Decision Rationale <span class="required">*</span></label>
+                <div class="description">Provide clear reasoning for your Gate 1 decision recommendation</div>
+                <textarea id="decision_rationale" name="decision_rationale" placeholder="Explain the key factors that influenced your Go/Kill/Hold/Recycle decision" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="key_risks_assumptions">Key Risks and Assumptions</label>
+                <div class="description">Identify the main risks and assumptions that would need to be addressed if proceeding</div>
+                <textarea id="key_risks_assumptions" name="key_risks_assumptions" placeholder="List critical uncertainties and potential barriers that Stage 1 (Scoping) should investigate"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="next_steps">Recommended Next Steps (if Go decision)</label>
+                <div class="description">If recommending "Go", outline key activities for Stage 1 (Scoping)</div>
+                <textarea id="next_steps" name="next_steps" placeholder="What research, analysis, or validation should be prioritised in the Scoping stage?"></textarea>
+            </div>
+
+            <!-- Section 5: Team Information -->
+            <h2>Team Information</h2>
+
+            <div class="form-group">
+                <label for="group_members">Group Members <span class="required">*</span></label>
+                <div class="description">List all team member names</div>
+                <input type="text" id="group_members" name="group_members" placeholder="Student Name 1, Student Name 2, Student Name 3, Student Name 4" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tutorial_group">Tutorial Group <span class="required">*</span></label>
+                <div class="description">Your tutorial day/time and tutor name</div>
+                <input type="text" id="tutorial_group" name="tutorial_group" placeholder="e.g., Tuesday 2pm - Tutor Name" required>
+            </div>
+
+            <!-- Submission Confirmation -->
+            <div class="confirmation-box">
+                <h3>Submission Confirmation</h3>
+                <p>By submitting this form, your group confirms that:</p>
+                <ul>
+                    <li>All team members contributed to this Gate 1 evaluation</li>
+                    <li>The assessment represents your collective analysis of the LaundryMax opportunity</li>
+                    <li>You understand this methodology transfers directly to Assessment 1 application</li>
+                </ul>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Gate 1 Evaluation</button>
+        </form>
+
+        <div style="text-align: center; margin-top: 20px; color: #666;">
+            <p><strong>Thank you for completing the LaundryMax Co. Gate 1 Evaluation!</strong></p>
+        </div>
+    </div>
+</body>
+</html>
