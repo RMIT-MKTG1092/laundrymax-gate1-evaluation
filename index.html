@@ -92,7 +92,7 @@
 </head>
 <body>
     <div class="form-container">
-        <h1>Stage-Gate 1 Evaluation Worksheet Gate 1 Evaluation Worksheet</h1>
+        <h1>Stage-Gate 1 Evaluation Worksheet</h1>
         
         <div class="instruction-box">
             <strong>Stage-Gate® Gate 1: Idea Screen Assessment</strong><br>
@@ -106,19 +106,19 @@
             
             <div class="form-group">
                 <label for="opportunity_name">Innovation Opportunity Name <span class="required">*</span></label>
-                <div class="description">Provide a brief, descriptive name for your LaundryMax innovation direction</div>
+                <div class="description">Provide a brief, descriptive name for your innovation direction</div>
                 <input type="text" id="opportunity_name" name="Innovation Opportunity Name" placeholder="e.g., Smart Refill Packaging System or Apartment-Friendly Concentrated Formula" required>
             </div>
 
             <div class="form-group">
                 <label for="opportunity_description">Brief Innovation Description <span class="required">*</span></label>
-                <div class="description">Summarise your chosen LaundryMax innovation opportunity in 2-3 sentences</div>
+                <div class="description">Summarise your chosen innovation opportunity in 2-3 sentences</div>
                 <textarea id="opportunity_description" name="Brief Innovation Description" placeholder="Describe the core concept and target consumer need being addressed" required></textarea>
             </div>
 
             <div class="form-group">
                 <label for="target_segment">Primary Target Consumer Segment <span class="required">*</span></label>
-                <div class="description">Which LaundryMax consumer group does this opportunity primarily serve?</div>
+                <div class="description">Which consumer group does this opportunity primarily serve?</div>
                 <select id="target_segment" name="Primary Target Consumer Segment" required>
                     <option value="">Select a target segment...</option>
                     <option value="time-poor-households">Time-poor dual-income households</option>
@@ -138,7 +138,7 @@
 
             <div class="form-group">
                 <label for="strategic_alignment">Strategic Alignment with Stage-Gate 1 Evaluation Worksheet <span class="required">*</span></label>
-                <div class="description">Does this opportunity align with LaundryMax's current capabilities, brand positioning, and market position?</div>
+                <div class="description">Does this opportunity align with company's current capabilities, brand positioning, and market position?</div>
                 <select id="strategic_alignment" name="Strategic Alignment with Stage-Gate 1 Evaluation Worksheet" required>
                     <option value="">Select assessment...</option>
                     <option value="pass">Pass - Strong alignment with company direction</option>
@@ -149,12 +149,12 @@
             <div class="form-group">
                 <label for="strategic_alignment_rationale">Strategic Alignment Rationale</label>
                 <div class="description">Explain your Pass/Fail assessment for strategic alignment</div>
-                <textarea id="strategic_alignment_rationale" name="Strategic Alignment Rationale" placeholder="Justify why this opportunity fits (or doesn't fit) with LaundryMax's capabilities and market position"></textarea>
+                <textarea id="strategic_alignment_rationale" name="Strategic Alignment Rationale" placeholder="Justify why this opportunity fits (or doesn't fit) with the company's capabilities and market position"></textarea>
             </div>
 
             <div class="form-group">
                 <label for="market_potential">Market Size Potential <span class="required">*</span></label>
-                <div class="description">Is there sufficient addressable market opportunity for LaundryMax to pursue?</div>
+                <div class="description">Is there sufficient addressable market opportunity for the company to pursue?</div>
                 <select id="market_potential" name="Market Size Potential" required>
                     <option value="">Select assessment...</option>
                     <option value="pass">Pass - Sufficient market size and potential</option>
@@ -170,7 +170,7 @@
 
             <div class="form-group">
                 <label for="technical_feasibility">Technical Feasibility <span class="required">*</span></label>
-                <div class="description">Can this innovation potentially be developed and implemented by LaundryMax?</div>
+                <div class="description">Can this innovation potentially be developed and implemented by the company?</div>
                 <select id="technical_feasibility" name="Technical Feasibility" required>
                     <option value="">Select assessment...</option>
                     <option value="pass">Pass - Technically feasible within reasonable resources</option>
@@ -205,7 +205,7 @@
 
             <div class="form-group">
                 <label for="capability_synergy">Synergy with Existing Capabilities (1-5) <span class="required">*</span></label>
-                <div class="description">How well does this leverage LaundryMax's current strengths and resources?</div>
+                <div class="description">How well does this leverage the company's current strengths and resources?</div>
                 <select id="capability_synergy" name="Synergy with Existing Capabilities (1-5)" required>
                     <option value="">Select rating...</option>
                     <option value="5">5 - Perfect synergy with core capabilities</option>
@@ -248,7 +248,7 @@
 
         var a = document.createElement("a");
         a.href = url;
-        a.download = "LaundryMax_Gate1_Worksheet.doc";
+        a.download = "Stage_Gate1_Worksheet.doc";
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
